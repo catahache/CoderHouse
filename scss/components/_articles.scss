@@ -1,0 +1,25 @@
+@import "../colors";
+@import "../extensions/mixins";
+
+.articulos {
+    margin: 80px 0 200px 0;
+}
+
+.articulo {
+    font: {
+        family: "Anonymous Pro", monospace;
+        weight: 100;
+        size: 16px;
+    }
+    color: $color-text;
+    margin-top: 50px;
+
+    .titulo-articulo {
+        font-size: 24px;
+    }
+
+    .pie-de-articulo {
+        font-size: 12px;
+        color: $color-link;
+    }
+}

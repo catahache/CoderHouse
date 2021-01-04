@@ -1,0 +1,164 @@
+@import "../colors";
+@import "../extensions/mixins";
+
+.arrow-left {
+    display: none; //si no lo pongo antes de la mq mobile, esta ultima no funciona
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .medea-title,
+    .medea-sub {
+        display: none;
+    }
+
+    .arrow-left {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .navigation {
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+// DESCRIPCION
+.medea-description {
+    .container-title,
+    .container-sub {
+        width: 70%;
+        text-align: center;
+        margin-left: 1%;
+        color: $color-text;
+        padding: 10px;
+    }
+
+    .container-title {
+        .medea-title {
+            font: {
+                family: "Poppins", sans-serif;
+                weight: 700;
+                size: 70px;
+            }
+        }
+    }
+
+    .container-sub {
+        .medea-sub {
+            font: {
+                family: "Poppins", sans-serif;
+                weight: 400;
+                size: 16px;
+            }
+        }
+    }
+}
+
+// MENU
+.nav {
+    position: relative;
+    bottom: 75px;
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 70px;
+        left: 20px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+
+        input {
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 42px;
+            left: 10px;
+
+            cursor: pointer;
+
+            opacity: 0; /*lo esconde*/
+            z-index: 2; /* lo pone sobre el icono del menu */
+
+            -webkit-touch-callout: none;
+
+            &:checked ~ ul {
+                /* transform: none; */
+                @include transform(translate(-150px, 0));
+            }
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                box-shadow: 0 0 8px $color-text, inset 0 0 8px $color-text;
+            }
+            50% {
+                box-shadow: 0 0 16px $color-text, inset 0 0 14px $color-text;
+            }
+            100% {
+                box-shadow: 0 0 8px $color-text, inset 0 0 8px $color-text;
+            }
+        }
+
+        .inner {
+            margin: 30px 40px 0 0;
+            background-color: transparent;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            box-shadow: 0 0 8px $color-text, inset 0 0 8px $color-text;
+            -webkit-animation: pulse 3s linear 1s infinite;
+
+            .logo-blanco-menu {
+                width: 50px;
+                height: 50px;
+                position: relative;
+                top: 5px;
+                left: 5px;
+            }
+        }
+    }
+
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: 10px 0 0 0px;
+        padding: 30px;
+        padding-top: 50px;
+        opacity: 0.8;
+
+        background: $color-text;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased; /* safari */
+
+        transform-origin: 0% 0%;
+        @include transform(translate(500px, 0));
+
+        @include transition(transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1));
+
+        a {
+            text-decoration: none;
+            color: #232323;
+
+            @include transition(color 0.3s ease);
+            z-index: 3;
+        }
+
+        li {
+            padding: 10px 0;
+            font: {
+                family: "Anonymous Pro", monospace;
+                weight: 100;
+                size: 22px;
+            }
+
+            &:hover {
+                color: $color-link;
+            }
+        }
+    }
+}

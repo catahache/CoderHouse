@@ -1,0 +1,49 @@
+@import "../colors";
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .que {
+        height: 450px;
+        .txt-que {
+            top: 780px;
+            left: 27%;
+            width: 170px;
+        }
+    }
+}
+
+/* Small to medium tablet styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+    .que {
+        height: 600px;
+        .txt-que {
+            top: 1030px;
+        }
+    }
+}
+
+.que {
+    height: 1000px;
+
+    .fabric02 {
+        background: {
+            image: url(../../images/background/fabric-02.png);
+            repeat: no-repeat;
+            size: 100%;
+        }
+
+        width: 100%;
+        height: 900px;
+        opacity: 0.15;
+        margin-bottom: 100px;
+    }
+
+    .txt-que {
+        position: absolute;
+        top: 1100px;
+        left: 30%;
+        opacity: 1;
+        color: $color-text;
+        width: 400px;
+    }
+}

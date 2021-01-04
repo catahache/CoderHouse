@@ -1,0 +1,77 @@
+@import "./colors";
+@import "./components/header";
+@import "./components/1st-content";
+@import "./components/info";
+@import "./components/footer";
+@import "./components/archive";
+@import "./components/articles";
+@import "./components/circe";
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+
+    background: rgb(9, 9, 9);
+    background: linear-gradient(
+        183deg,
+        rgba(9, 9, 9, 1) 14%,
+        rgba(24, 23, 23, 0.9794292717086834) 100%
+    );
+
+    a {
+        color: $color-link;
+
+        &:hover {
+            color: $color-text;
+        }
+    }
+
+    h2 {
+        font: {
+            family: "Poppins", sans-serif;
+            weight: 700;
+            size: 50px;
+        }
+        color: $color-text;
+    }
+
+    h3 {
+        font: {
+            family: "Poppins", sans-serif;
+            weight: 700;
+            size: 50px;
+        }
+        margin-bottom: 40px;
+        color: $color-text;
+    }
+
+    h4 {
+        font: {
+            family: "Anonymous Pro", monospace;
+            weight: 100;
+            size: 16px;
+        }
+    }
+}
