@@ -1,14 +1,12 @@
 @import "./mosaic";
 @import "./medea-img";
 
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    .contenido-principal {
-        height: 400px;
-    }
-}
-
 .contenido-principal {
     height: 550px;
     margin-bottom: 200px;
+
+    @media only screen and (max-width: 600px) {
+        height: 500px;
+        margin-bottom: 100px;
+    }
 }

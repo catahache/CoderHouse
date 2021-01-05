@@ -1,18 +1,6 @@
 @import "../colors";
 @import "../extensions/mixins";
 
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    .invitadx {
-        display: flex;
-        justify-content: start;
-        .info-invitadx {
-            margin-top: 30px;
-            width: 600px;
-        }
-    }
-}
-
 .title-circe {
     margin-top: 50px;
 }
@@ -33,6 +21,11 @@
 .invitadx {
     margin: 150px;
 
+    @media only screen and (max-width: 600px) {
+        display: flex;
+        justify-content: start;
+    }
+
     .info-invitadx {
         width: 350px;
         font: {
@@ -42,6 +35,11 @@
         }
 
         color: $color-text;
+
+        @media only screen and (max-width: 600px) {
+            margin-top: 30px;
+            width: 350px;
+        }
     }
 
     .img-circle {

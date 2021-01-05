@@ -1,5 +1,9 @@
 @import "./cards";
 
 .h3-donde {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+
+    @media only screen and (max-width: 600px) {
+        margin-bottom: 20px;
+    }
 }

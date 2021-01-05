@@ -1,14 +1,3 @@
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    .logo-cceba {
-        width: 20%;
-    }
-
-    .logo-una {
-        width: 15%;
-    }
-}
-
 .container-footer {
     display: flex;
     justify-content: space-between;
@@ -21,13 +10,25 @@
     color: $color-text;
     padding: 15px;
 
+    .direction {
+        margin: 0;
+    }
+
     .logo-cceba {
         width: 15%;
         height: auto;
+
+        @media only screen and (max-width: 600px) {
+            width: 20%;
+        }
     }
 
     .logo-una {
         width: 10%;
         height: auto;
+
+        @media only screen and (max-width: 600px) {
+            width: 15%;
+        }
     }
 }

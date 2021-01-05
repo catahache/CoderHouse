@@ -1,22 +1,18 @@
 @import "./colors";
-@import "./components/header";
+
+//Componentes
 @import "./components/1st-content";
-@import "./components/info";
-@import "./components/footer";
 @import "./components/archive";
 @import "./components/articles";
+@import "./components/cards";
 @import "./components/circe";
-
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    h3 {
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    h4 {
-        font-size: 10px;
-    }
-}
+@import "./components/footer";
+@import "./components/header";
+@import "./components/info";
+@import "./components/medea-img";
+@import "./components/mosaic";
+@import "./components/what";
+@import "./components/where";
 
 * {
     margin: 0;
@@ -65,6 +61,11 @@ body {
         }
         margin-bottom: 40px;
         color: $color-text;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
     }
 
     h4 {
@@ -72,6 +73,10 @@ body {
             family: "Anonymous Pro", monospace;
             weight: 100;
             size: 16px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            font-size: 10px;
         }
     }
 }

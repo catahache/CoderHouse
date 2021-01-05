@@ -3,6 +3,13 @@
     margin-left: 0.6%;
     padding: 15px;
 
+    @media only screen and (max-width: 600px) {
+        margin-left: 0;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
     .mosaic {
         display: grid;
         grid-template-columns: repeat(9, 1fr);
@@ -40,6 +47,10 @@
         .mosaic-inscripcion {
             grid-column: 5/6;
             grid-row: 4/5;
+
+            @media only screen and (max-width: 600px) {
+                margin-left: 10px;
+            }
         }
 
         .mosaic_item1 {

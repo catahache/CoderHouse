@@ -1,25 +1,19 @@
 @import "../colors";
 @import "../extensions/mixins";
 
-.arrow-left {
-    display: none; //si no lo pongo antes de la mq mobile, esta ultima no funciona
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    .medea-title,
-    .medea-sub {
-        display: none;
-    }
-
-    .arrow-left {
-        display: block;
-        margin-left: 10px;
-    }
-
-    .navigation {
+.navigation {
+    @media only screen and (max-width: 600px) {
         align-self: center;
         justify-content: center;
+    }
+}
+
+.arrow-left {
+    display: none; //si no lo pongo antes de la mq mobile, esta ultima no funciona
+
+    @media only screen and (max-width: 600px) {
+        display: block;
+        margin-left: 10px;
     }
 }
 
@@ -35,6 +29,10 @@
     }
 
     .container-title {
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+
         .medea-title {
             font: {
                 family: "Poppins", sans-serif;
@@ -45,6 +43,10 @@
     }
 
     .container-sub {
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+
         .medea-sub {
             font: {
                 family: "Poppins", sans-serif;
