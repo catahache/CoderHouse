@@ -419,13 +419,24 @@
   }
 }
 .que .fabric02 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-bottom: 100px;
+}
+.que .fabric02::after {
+  content: "";
   background-image: url(../images/background/fabric-02.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 100%;
-  height: 800px;
   opacity: 0.15;
-  margin-bottom: 100px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 @media only screen and (max-width: 600px) {
   .que .fabric02 {
@@ -433,25 +444,18 @@
     margin-bottom: 50px;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .que .fabric02 {
+    height: 500px;
+  }
+}
 .que .txt-que {
-  position: absolute;
-  top: 1100px;
-  left: 30%;
-  opacity: 1;
   color: #e3e3e3;
   width: 400px;
-  font-size: 8px;
 }
 @media only screen and (max-width: 600px) {
   .que .txt-que {
-    top: 740px;
-    left: 25%;
     width: 170px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 960px) {
-  .que .txt-que {
-    top: 1030px;
   }
 }
 
@@ -543,6 +547,21 @@
   }
 }
 
+.modal-body,
+.modal-footer {
+  background-color: #090909;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-body iframe {
+    width: 300px;
+  }
+}
+
+.modal-footer button {
+  background-color: #e3e3e3;
+}
+
 .container-mosaic {
   height: 570px;
   margin-left: 0.6%;
@@ -628,13 +647,24 @@
   }
 }
 .que .fabric02 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-bottom: 100px;
+}
+.que .fabric02::after {
+  content: "";
   background-image: url(../images/background/fabric-02.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 100%;
-  height: 800px;
   opacity: 0.15;
-  margin-bottom: 100px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 @media only screen and (max-width: 600px) {
   .que .fabric02 {
@@ -642,25 +672,18 @@
     margin-bottom: 50px;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .que .fabric02 {
+    height: 500px;
+  }
+}
 .que .txt-que {
-  position: absolute;
-  top: 1100px;
-  left: 30%;
-  opacity: 1;
   color: #e3e3e3;
   width: 400px;
-  font-size: 8px;
 }
 @media only screen and (max-width: 600px) {
   .que .txt-que {
-    top: 740px;
-    left: 25%;
     width: 170px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 960px) {
-  .que .txt-que {
-    top: 1030px;
   }
 }
 

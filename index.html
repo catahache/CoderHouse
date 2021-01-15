@@ -29,7 +29,7 @@
             content="MEDEA es un grupo de estudio y experimentacion del IIEAC UNA dedicado al arte tecnológico argentino"
         />
         <meta property="og:url" content="https://medea.com.ar" />
-        <meta property="og:image" content="https://medea.com.ar/medea" />
+        <meta property="og:image" content="./images/LOGOBASE2.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
 
@@ -127,8 +127,10 @@
                         />
                     </div>
                     <a
-                        href="https://docs.google.com/forms/u/1/d/1PeTSJ8gI8bjj8mKKTLjzyaiSjkJ3XjkMeCfj2fXnE3w/edit?usp=drive_web"
+                        href=""
                         class="mosaic-inscripcion"
+                        data-toggle="modal"
+                        data-target="#modalInscripcion"
                         >INSCRIPCIÓN</a
                     >
                     <div class="mosaic_item3">
@@ -166,19 +168,23 @@
         <!-- INFORMACION _info.scss -->
         <section class="info-medea container">
             <!-- QUE _what.scss -->
-            <section class="que d-flex row">
-                <div class="fabric02" id="Que"></div>
-                <div class="txt-que text-center">
-                    <h3>QUÉ</h3>
-                    <h4>
-                        MEDEA (Multimediales, Electrónicas y Digitales.
-                        Exploratorio Artístico), es un grupo de estudio que se
-                        propone como un espacio de reflexión, investigación y
-                        difusión de prácticas artísticas relacionadas a las
-                        Artes Mediales en Argentina que utilizan medios y
-                        soportes provenientes de tecnologías análogas y
-                        digitales.
-                    </h4>
+            <section class="que row">
+                <div
+                    class="fabric02 text-center d-flex justify-content-center"
+                    id="Que"
+                >
+                    <div class="align-self-center">
+                        <h3 class="txt-que">QUÉ</h3>
+                        <h4 class="txt-que">
+                            MEDEA (Multimediales, Electrónicas y Digitales.
+                            Exploratorio Artístico), es un grupo de estudio que
+                            se propone como un espacio de reflexión,
+                            investigación y difusión de prácticas artísticas
+                            relacionadas a las Artes Mediales en Argentina que
+                            utilizan medios y soportes provenientes de
+                            tecnologías análogas y digitales.
+                        </h4>
+                    </div>
                 </div>
             </section>
 
@@ -255,6 +261,37 @@
             </section>
         </section>
 
+        <!-- MODAL _modal.scss -->
+        <div
+            class="modal fade"
+            id="modalInscripcion"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalInscripcionTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe47M4-fjmargsLwqeKMFnLEUDviM0Ya_NIqvrj__6VP40I9A/viewform?embedded=true"
+                            width="450"
+                            height="1288"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                            >Cargando…</iframe
+                        >
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- FOOTER _footer.scss  -->
         <footer class="container-footer align-self-center">
             <p class="direction">Bartolomé Mitre 1869, 3er piso</p>
@@ -286,35 +323,5 @@
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"
         ></script>
-
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <!-- <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-            crossorigin="anonymous"
-        ></script> -->
-
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-        <!-- <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-            integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-            integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-            crossorigin="anonymous"
-        ></script> -->
-
-        <!-- JQuery -->
-        <!-- <script
-            src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous"
-        ></script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-        <script src="./myscripts.js"></script> -->
     </body>
 </html>

@@ -1,0 +1,16 @@
+@import "../colors";
+
+.modal-body,
+.modal-footer {
+    background-color: #090909;
+}
+
+.modal-body iframe {
+    @media only screen and (max-width: 600px) {
+        width: 300px;
+    }
+}
+
+.modal-footer button {
+    background-color: $color-text;
+}
